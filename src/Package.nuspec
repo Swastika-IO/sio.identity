@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Swastika.Identity</id>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <authors>Swastika I/O Team, Smileway Team</authors>
     <owners>Swastika I/O, Smileway</owners>
     <licenseUrl>https://github.com/Swastika-IO/Swastika-Identity/blob/master/LICENSE</licenseUrl>
@@ -14,21 +14,21 @@
     <copyright>Copyright ©2017 Swastika I/O</copyright>
     <tags>Swastika Smileway Identity</tags>
     <dependencies>
-		<dependency id="Microsoft.AspNetCore.Authorization" version="1.1.2" />
-		<dependency id="Microsoft.AspNetCore.Identity" version="1.1.2" />
-		<dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="1.1.2" />
-		<dependency id="Microsoft.AspNetCore.Mvc" version="1.1.3" />
-		<dependency id="Microsoft.EntityFrameworkCore" version="1.1.2" />
-		<dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.2" />
-		<dependency id="Microsoft.EntityFrameworkCore.SqlServer.Design" version="1.1.2" />
-		<dependency id="Microsoft.Extensions.Configuration" version="1.1.2" />
-		<dependency id="Microsoft.Extensions.Configuration.FileExtensions" version="1.1.2" />
-		<dependency id="Microsoft.Extensions.Configuration.Json" version="1.1.2" />
+		<dependency id="Microsoft.AspNetCore.Authorization" Version="2.0.0" />
+		<dependency id="Microsoft.AspNetCore.Identity" Version="2.0.0" />
+		<dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.0.0" />
+		<dependency id="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+		<dependency id="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+		<dependency id="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
+		<dependency id="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" />
+		<dependency id="Microsoft.Extensions.Configuration" Version="2.0.0" />
+		<dependency id="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.0" />
+		<dependency id="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
     </dependencies>
   </metadata>
   
 	<files>
-		<file src="Swastika.Identity\bin\Release\netstandard1.6\Swastika.Identity.dll" target="lib\netstandard1.6\Swastika.Identity.dll" />
+		<file src="Swastika.IO.Identity\bin\Release\netstandard2.0\Swastika.IO.Identity.dll" target="lib\netstandard2.0\Swastika.IO.Identity.dll" />
 		<file src="README.md" target="" />
 	</files>
 </package>
