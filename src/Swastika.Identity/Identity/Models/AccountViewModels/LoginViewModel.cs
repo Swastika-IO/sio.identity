@@ -11,6 +11,15 @@ namespace Swastika.Identity.Models.AccountViewModels
         /// The UserName.
         /// </value>
         [Required]
+        public string Email{ get; set; }
+
+        /// <summary>
+        /// Gets or sets the UserName.
+        /// </summary>
+        /// <value>
+        /// The UserName.
+        /// </value>
+        [Required]
         public string UserName { get; set; }
 
         /// <summary>
