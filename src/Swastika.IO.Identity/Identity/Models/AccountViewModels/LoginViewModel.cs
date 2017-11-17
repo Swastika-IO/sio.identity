@@ -10,7 +10,6 @@ namespace Swastika.Identity.Models.AccountViewModels
         /// <value>
         /// The UserName.
         /// </value>
-        [Required]
         public string Email{ get; set; }
 
         /// <summary>
@@ -19,7 +18,6 @@ namespace Swastika.Identity.Models.AccountViewModels
         /// <value>
         /// The UserName.
         /// </value>
-        [Required]
         public string UserName { get; set; }
 
         /// <summary>

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Swastika.Identity.Identity;
+using Swastika.IO.Identity.Identity.Entities;
 
 namespace Swastika.Identity.Data
 {
@@ -26,6 +27,9 @@ namespace Swastika.Identity.Data
         {
 
         }
+
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         /// <summary>
         /// Called when [configuring].
