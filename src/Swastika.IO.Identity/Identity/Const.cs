@@ -10,7 +10,7 @@ namespace Swastika.Identity.Identity
         /// <summary>
         /// The constant default connection
         /// </summary>
-        public const string CONST_DEFAULT_CONNECTION = "DefaultConnection";
+        public const string CONST_DEFAULT_CONNECTION = "AccountConnection";
 
         /// <summary>
         /// The constant file appsetting

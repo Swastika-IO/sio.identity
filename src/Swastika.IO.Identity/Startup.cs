@@ -16,7 +16,7 @@ namespace Swastika.Identity
         public static void ConfigIdentity(IServiceCollection services, IConfigurationRoot Configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("AccountConnection")));
 
             PasswordOptions pOpt = new PasswordOptions()
             {
