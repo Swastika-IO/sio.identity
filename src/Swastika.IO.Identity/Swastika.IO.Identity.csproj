@@ -7,14 +7,17 @@
   <ItemGroup>
     <Compile Remove="Configs\**" />
     <Compile Remove="Identity\Providers\**" />
+    <Compile Remove="Identity\ViewModels\**" />
     <Compile Remove="Providers\**" />
     <Compile Remove="ViewModels\**" />
     <EmbeddedResource Remove="Configs\**" />
     <EmbeddedResource Remove="Identity\Providers\**" />
+    <EmbeddedResource Remove="Identity\ViewModels\**" />
     <EmbeddedResource Remove="Providers\**" />
     <EmbeddedResource Remove="ViewModels\**" />
     <None Remove="Configs\**" />
     <None Remove="Identity\Providers\**" />
+    <None Remove="Identity\ViewModels\**" />
     <None Remove="Providers\**" />
     <None Remove="ViewModels\**" />
   </ItemGroup>
