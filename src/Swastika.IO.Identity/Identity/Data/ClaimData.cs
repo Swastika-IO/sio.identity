@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Swastika.Identity.Data
 {
-    public static class ClaimData
+    public static class IdentityBasedData
     {
         public static List<string> UserClaims { get; set; } = new List<string>
                                                             {
