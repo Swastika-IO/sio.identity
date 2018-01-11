@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Swastika.IO.Identity.Identity.Models.AccountViewModels
+namespace Swastika.Identity.Models.AccountViewModels
 {
     public class LoginWithRecoveryCodeViewModel
     {

@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Swastika.IO.Identity.Identity.Infrastructure
+namespace Swastika.Identity.Infrastructure
 {
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using static Swastika.Identity.Identity.Const;
+using static Swastika.Identity.Const;
 
-namespace Swastika.IO.Identity.Identity.Entities
+namespace Swastika.Identity.Entities
 {
     public class Client
     {

@@ -3,8 +3,8 @@ using Swastika.Identity.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Swastika.Identity.Identity;
-using Swastika.IO.Identity.Identity.Entities;
+using Swastika.Identity;
+using Swastika.Identity.Entities;
 
 namespace Swastika.Identity.Data
 {

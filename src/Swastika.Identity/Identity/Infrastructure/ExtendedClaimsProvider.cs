@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text;
 
-namespace Swastika.IO.Identity.Identity.Infrastructure
+namespace Swastika.Identity.Infrastructure
 {
     public static class ExtendedClaimsProvider
     {

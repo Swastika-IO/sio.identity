@@ -2,7 +2,7 @@ using Swastika.Identity.Services;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
-namespace Swastika.IO.Identity.Identity.Services
+namespace Swastika.Identity.Services
 {
     public static class EmailSenderExtensions
     {
