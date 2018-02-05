@@ -14,8 +14,9 @@ namespace Swastika.Identity
     public  class Startup
     {
         public static void ConfigIdentity(
-            IServiceCollection services, IConfigurationRoot Configuration, string connectionString)
+            IServiceCollection services, IConfigurationRoot Configuration, string connectionName)
         {
+            string connectionString = Configuration.GetConnectionString(connectionName);
             if (string.IsNullOrEmpty(connectionString))
             {
                 connectionString = "Server=(localdb)\\mssqllocaldb;Database=aspnet-Swastika.Cms.Db;Trusted_Connection=True;MultipleActiveResultSets=true";
@@ -44,16 +45,16 @@ namespace Swastika.Identity
 
 
 
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("AddEditUser", policy =>
-            //    {
-            //        policy.RequireClaim("Add User");
-            //        policy.RequireClaim("Edit User");
-            //    });
-            //    options.AddPolicy("DeleteUser", policy => policy.RequireClaim("Delete User"));
-            //})
-            // ;
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AddEditUser", policy =>
+                {
+                    policy.RequireClaim("Add User");
+                    policy.RequireClaim("Edit User");
+                });
+                options.AddPolicy("DeleteUser", policy => policy.RequireClaim("Delete User"));
+            })
+             ;
 
         }
     }
