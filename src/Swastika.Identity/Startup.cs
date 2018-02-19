@@ -1,17 +1,17 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿// Licensed to the Swastika I/O Foundation under one or more agreements.
+// The Swastika I/O Foundation licenses this file to you under the GNU General Public License v3.0 license.
+// See the LICENSE file in the project root for more information.
+
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swastika.Identity.Data;
 using Swastika.Identity.Models;
-using Swastika.Identity.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Swastika.Identity
 {
-    public  class Startup
+    public class Startup
     {
         public static void ConfigIdentity(
             IServiceCollection services, IConfigurationRoot Configuration, string connectionName)
@@ -37,13 +37,10 @@ namespace Swastika.Identity
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password = pOpt;
-
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders()
                 .AddUserManager<UserManager<ApplicationUser>>();
-
-
 
             services.AddAuthorization(options =>
             {
@@ -55,7 +52,6 @@ namespace Swastika.Identity
                 options.AddPolicy("DeleteUser", policy => policy.RequireClaim("Delete User"));
             })
              ;
-
         }
     }
 }
