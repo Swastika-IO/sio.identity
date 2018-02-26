@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild> 
+    <Version>0.0.3</Version>
+    <Company>Swastika I/O</Company>
+    <Authors>Swastika I/O Team, Smileway Team</Authors>
+    <Product>Swastika I/O Identity</Product>
+    <Copyright>Swastika I/O, Smileway, Befirst.Solution</Copyright>
+    <PackageLicenseUrl>https://github.com/Swastika-IO/Swastika-Heart/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.swastika.io</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/26378971</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Swastika-IO/Swastika-Heart</RepositoryUrl>
+    <PackageTags>dotnet core, asp.net core, framework base</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,5 +45,4 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
   </ItemGroup>
-
 </Project>
