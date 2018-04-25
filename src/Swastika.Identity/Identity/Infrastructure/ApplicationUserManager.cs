@@ -16,6 +16,7 @@ namespace Swastika.Identity.Infrastructure
             IdentityErrorDescriber errors, IServiceProvider services, ILogger<UserManager<ApplicationUser>> logger)
             : base(store, optionsAccessor, passwordHasher, userValidators, passwordValidators, keyNormalizer, errors, services, logger)
         {
+
         }
     }
 }
