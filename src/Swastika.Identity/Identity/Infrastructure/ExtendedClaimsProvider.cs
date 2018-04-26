@@ -1,8 +1,10 @@
-﻿using Swastika.Identity.Models;
-using System;
+﻿// Licensed to the Swastika I/O Foundation under one or more agreements.
+// The Swastika I/O Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
+using Swastika.Identity.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
-using System.Text;
 
 namespace Swastika.Identity.Infrastructure
 {
@@ -10,7 +12,6 @@ namespace Swastika.Identity.Infrastructure
     {
         public static IEnumerable<Claim> GetClaims(ApplicationUser user)
         {
-
             List<Claim> claims = new List<Claim>();
 
             foreach (var claim in user.Claims)
@@ -24,6 +25,5 @@ namespace Swastika.Identity.Infrastructure
         {
             return new Claim(type, value, ClaimValueTypes.String);
         }
-
     }
 }

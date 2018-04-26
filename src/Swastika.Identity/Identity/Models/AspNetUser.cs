@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Security.Claims;
-using Swastika.Identity.Interfaces;
+﻿// Licensed to the Swastika I/O Foundation under one or more agreements.
+// The Swastika I/O Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
 using Microsoft.AspNetCore.Http;
+using Swastika.Identity.Interfaces;
+using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace Swastika.Identity.Models
 {

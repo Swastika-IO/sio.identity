@@ -1,4 +1,7 @@
-﻿
+﻿// Licensed to the Swastika I/O Foundation under one or more agreements.
+// The Swastika I/O Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
 using System.Collections.Generic;
 using System.Security.Claims;
 
@@ -13,6 +16,7 @@ namespace Swastika.Identity.Interfaces
         /// The name.
         /// </value>
         string Name { get; }
+
         /// <summary>
         /// Determines whether this instance is authenticated.
         /// </summary>
@@ -20,6 +24,7 @@ namespace Swastika.Identity.Interfaces
         ///   <c>true</c> if this instance is authenticated; otherwise, <c>false</c>.
         /// </returns>
         bool IsAuthenticated();
+
         /// <summary>
         /// Gets the claims identity.
         /// </summary>

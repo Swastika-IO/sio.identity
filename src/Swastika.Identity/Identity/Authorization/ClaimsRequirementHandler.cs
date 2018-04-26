@@ -1,12 +1,15 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
+﻿// Licensed to the Swastika I/O Foundation under one or more agreements.
+// The Swastika I/O Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
 using Microsoft.AspNetCore.Authorization;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Swastika.Identity.Authorization
 {
     public class ClaimsRequirementHandler : AuthorizationHandler<ClaimRequirement>
     {
-
         /// <summary>
         /// Handles the requirement asynchronous.
         /// </summary>
@@ -16,7 +19,6 @@ namespace Swastika.Identity.Authorization
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context,
                                                                ClaimRequirement requirement)
         {
-
             var claim = context.User.Claims.FirstOrDefault(c => c.Type == requirement.ClaimName);
             if (claim != null && claim.Value.Contains(requirement.ClaimValue))
             {

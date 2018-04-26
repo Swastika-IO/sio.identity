@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿// Licensed to the Swastika I/O Foundation under one or more agreements.
+// The Swastika I/O Foundation licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +14,7 @@ namespace Swastika.Identity.Models
     {
         [Required]
         public DateTime JoinDate { get; set; }
+
         public bool IsActived { get; set; }
         public System.DateTime LastModified { get; set; }
         public string ModifiedBy { get; set; }
@@ -39,7 +43,5 @@ namespace Swastika.Identity.Models
         /// Navigation property for this users login accounts.
         /// </summary>
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; } = new List<IdentityUserLogin<string>>();
-
-
     }
 }
