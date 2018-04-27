@@ -4,8 +4,10 @@
 
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Swastika.Identity.Entities;
 using Swastika.Identity.Models;
+using System.IO;
 
 namespace Swastika.Identity.Data
 {
@@ -56,6 +58,21 @@ namespace Swastika.Identity.Data
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var config = new ConfigurationBuilder()
+                  .SetBasePath(Directory.GetCurrentDirectory())
+                  .AddJsonFile(Const.CONST_FILE_APPSETTING)
+                  .Build();
+            string cnn = config.GetConnectionString(Const.CONST_DEFAULT_CONNECTION);
+            if (!string.IsNullOrEmpty(cnn))
+            {
+                // define the database to use
+                optionsBuilder.UseSqlServer(cnn);
+                base.OnConfiguring(optionsBuilder);
+            }
+           
         }
     }
 }
