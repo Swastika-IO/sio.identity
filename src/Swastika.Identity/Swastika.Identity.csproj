@@ -2,7 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.0.4</Version>
+    <Version>0.0.4</Version>
+    <Authors>Swastika I/O Team, Smileway Team</Authors>
+    <Company>Swastika I/O</Company>
+    <Product>Swastika I/O Identity</Product>
+    <Copyright>Swastika I/O, Smileway, Befirst.Solution</Copyright>
+    <PackageLicenseUrl>https://github.com/Swastika-IO/Swastika-IO-Identity/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.swastika.io</PackageProjectUrl>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/26378971</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Swastika-IO/Swastika-IO-Identity</RepositoryUrl>
+    <PackageTags>dotnet core, asp.net core, framework base, identity</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
