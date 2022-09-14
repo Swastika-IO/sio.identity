@@ -1,1 +1,0 @@
-# Swastika-Identity
